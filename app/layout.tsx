@@ -9,7 +9,7 @@ const dmSerif = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: 
 
 export const metadata: Metadata = {
   title: 'NOVAE — The first light',
-  description: 'A new frequency is approaching. NOVAE debuts December 10, 2026.',
+  description: 'A new frequency is approaching. NOVAE debuts February 1, 2027.',
   generator: 'v0.app',
 }
 

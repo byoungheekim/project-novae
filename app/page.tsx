@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowUpRight, Play } from 'lucide-react'
 
-// 2026-12-10 18:00 KST, represented in UTC to avoid preview timezone differences.
-const debutDate = Date.UTC(2026, 11, 10, 9, 0, 0)
+// 2027-02-01 18:00 KST, represented in UTC to avoid preview timezone differences.
+const debutDate = Date.UTC(2027, 1, 1, 9, 0, 0)
 
 function getTimeLeft(now = Date.now()) {
   const distance = Math.max(0, debutDate - now)
@@ -46,7 +46,7 @@ export default function Page() {
           <div className="flex items-center gap-6 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground sm:gap-10">
             <a href="#signal" className="transition-colors hover:text-foreground">Signal</a>
             <a href="#debut" className="transition-colors hover:text-foreground">Debut</a>
-            <span className="hidden text-primary sm:inline">Seoul / 2026</span>
+            <span className="hidden text-primary sm:inline">Seoul / 2027</span>
           </div>
         </header>
 
@@ -93,12 +93,12 @@ export default function Page() {
       <section id="debut" className="px-6 py-24 sm:px-10 lg:px-16 lg:py-32">
         <div className="mx-auto max-w-7xl border-y border-border py-8 sm:py-12">
           <div className="flex flex-col justify-between gap-10 sm:flex-row sm:items-end">
-            <div><p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">Debut countdown</p><p className="mt-5 font-serif text-5xl tracking-tight sm:text-7xl">The wait ends<br />in <span className="text-primary">December.</span></p></div>
+            <div><p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">Debut countdown</p><p className="mt-5 font-serif text-5xl tracking-tight sm:text-7xl">The wait ends<br />in <span className="text-primary">February.</span></p></div>
             <div className="grid grid-cols-4 gap-4 sm:gap-8">
               {Object.entries(time).map(([label, value]) => <div key={label}><div suppressHydrationWarning className="font-mono text-3xl tabular-nums tracking-tight sm:text-5xl">{String(isMounted ? value : 0).padStart(2, '0')}</div><div className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{label}</div></div>)}
             </div>
           </div>
-          <div className="mt-12 flex items-center justify-between border-t border-border pt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground"><span>10.12.2026 / 18:00 KST</span><a href="mailto:hello@novae.world" className="group flex items-center gap-2 text-foreground">Stay close <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a></div>
+          <div className="mt-12 flex items-center justify-between border-t border-border pt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground"><span>01.02.2027 / 18:00 KST</span><a href="mailto:hello@novae.world" className="group flex items-center gap-2 text-foreground">Stay close <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a></div>
         </div>
       </section>
 
