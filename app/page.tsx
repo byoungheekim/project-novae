@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowUpRight, Play } from 'lucide-react'
 
-// 2026-12-10 18:00 KST, represented in UTC to avoid preview timezone differences.
-const debutDate = Date.UTC(2026, 11, 10, 9, 0, 0)
+// 2026-12-15 18:00 KST, represented in UTC to avoid preview timezone differences.
+const debutDate = Date.UTC(2026, 11, 15, 9, 0, 0)
 
 function getTimeLeft(now = Date.now()) {
   const distance = Math.max(0, debutDate - now)
@@ -98,7 +98,7 @@ export default function Page() {
               {Object.entries(time).map(([label, value]) => <div key={label}><div suppressHydrationWarning className="font-mono text-3xl tabular-nums tracking-tight sm:text-5xl">{String(isMounted ? value : 0).padStart(2, '0')}</div><div className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground">{label}</div></div>)}
             </div>
           </div>
-          <div className="mt-12 flex items-center justify-between border-t border-border pt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground"><span>10.12.2026 / 18:00 KST</span><a href="mailto:hello@novae.world" className="group flex items-center gap-2 text-foreground">Stay close <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a></div>
+          <div className="mt-12 flex items-center justify-between border-t border-border pt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground"><span>12.15.2026 / 18:00 KST</span><a href="mailto:hello@novae.world" className="group flex items-center gap-2 text-foreground">Stay close <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></a></div>
         </div>
       </section>
 
