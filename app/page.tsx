@@ -64,7 +64,7 @@ export default function Page() {
 
           <div className="relative mt-14 flex justify-center lg:mt-0 lg:justify-end">
             <div className="relative aspect-[4/5] w-[min(72vw,390px)] overflow-hidden border border-border/80 bg-card shadow-2xl shadow-primary/10">
-              <img src="/images/novae-teaser.png" alt="A chrome star prism floating in midnight blue space" className="h-full w-full object-cover" />
+              <img src="/placeholder.jpg" alt="A chrome star prism floating in midnight blue space" className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between font-mono text-[9px] uppercase tracking-[0.2em] text-foreground/70">
                 <span>Concept film / 001</span>
