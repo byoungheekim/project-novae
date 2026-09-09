@@ -8,8 +8,8 @@ const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono'
 const dmSerif = DM_Serif_Display({ subsets: ['latin'], weight: '400', variable: '--font-dm-serif' })
 
 export const metadata: Metadata = {
-  title: 'NOVAE — The first light',
-  description: 'A new frequency is approaching. NOVAE debuts December 15, 2026.',
+  title: 'TUIDE — The first light',
+  description: 'A new frequency is approaching. TUIDE debuts December 15, 2026.',
   generator: 'v0.app',
 }
 
