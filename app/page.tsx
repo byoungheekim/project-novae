@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowUpRight, Play } from 'lucide-react'
 
-// 2026-12-15 18:00 KST, represented in UTC to avoid preview timezone differences.
-const debutDate = Date.UTC(2026, 11, 15, 9, 0, 0)
+// 2026-12-20 18:00 KST, represented in UTC to avoid preview timezone differences.
+const debutDate = Date.UTC(2026, 11, 20, 9, 0, 0)
 
 function getTimeLeft(now = Date.now()) {
   const distance = Math.max(0, debutDate - now)
